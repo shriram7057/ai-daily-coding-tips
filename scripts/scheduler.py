@@ -44,7 +44,5 @@ def should_generate():
 if __name__ == "__main__":
     approved = should_generate()
 
-    if approved:
-        exit(0)
-
-    exit(1)
+    # Always exit with 0 (success) - the workflow will check the output
+    exit(0)
