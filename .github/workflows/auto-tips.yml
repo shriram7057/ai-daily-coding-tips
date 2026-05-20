@@ -2,7 +2,7 @@ name: AI Daily Coding Tips
 
 on:
   schedule:
-    - cron: "0 * * * *" # Runs hourly
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -50,4 +50,5 @@ jobs:
           COMMIT_MESSAGE="docs: publish daily coding tip"
 
           git commit -m "$COMMIT_MESSAGE"
+          git pull --rebase
           git push
