@@ -13,7 +13,7 @@ import random
 from datetime import datetime
 
 # Allowed hours (24-hour format)
-ACTIVE_HOURS = [9, 11, 13, 15, 18, 21]
+ACTIVE_HOURS = list(range(24))  # Allow all hours (0-23)
 
 # Probability of generation per hour
 GENERATION_CHANCE = 0.65
