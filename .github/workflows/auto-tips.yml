@@ -1,5 +1,8 @@
 name: AI Daily Coding Tips
+# name: AI Daily Coding Tips
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   schedule:
     - cron: "0 * * * *"
